@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    var estar = ["ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function findStar(str) {
+        for (var i =0;i<=star.length;i++){
+            if (star[i]===str){
+                alert(estar[i]);
+                break;
+            } else {
+                alert("Not Found");
+            }
+        }
+
+    }
+
+    var name = prompt("Enter your name");
+    var result = findStar(name);
+</script>
+</body>
+</html>
